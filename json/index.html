@@ -1,34 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JSON</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>React</title>
 </head>
 <body>
-    <h1>javascript object notation</h1>
-    <h2>practice here</h2>
-    <ul id="users-container">
-
-    </ul>
-    <script>
-      fetch('https://jsonplaceholder.typicode.com/posts')
-      .then(response => response.json())
-      .then(json => displayUser(json))
-
-
-      function displayUser(posts){
-          const userNames=posts.map(user=>user.id);
-         // console.log(userNames);
-         const ul=document.getElementById('users-container');
-         for(let i=0;i<userNames.length;i++){
-           const user=userNames[i];
-           const li=document.createElement('li');
-           li.innerText=user;
-           ul.appendChild(li);
-         }
-      }
-    </script>
+  <h1>React Starting Here</h1>
 </body>
 </html>
